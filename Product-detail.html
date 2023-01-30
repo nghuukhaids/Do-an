@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="./Trang-chu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="./doan.js"></script>
+    <script type="text/javascript" src="./jquery/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="./Product-detail.css">
+
+</head>
+
+<body>
+    <div class="top-nav d-flex justify-content-between align-items-center" id="top-nav">
+        <div class="ps-5 fw-bold"><i class="bi bi-telephone-fill pe-2"></i>0934.343.324</div>
+        <div class="pe-5 d-flex justify-content-end " style="width:500px">
+            <div> <i class="bi bi-person-circle pe-2"></i>Tài khoản</div>
+            <div style="padding-left:5rem"><i class="bi bi-bag-check-fill pe-2"></i> Giỏ hàng (0)</div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div>
+                    <a class="navbar-brand" href="#"><img style="width:100px" src="./img/icon/KRIK-icon.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div id="nav-bar-ul">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex mx-auto" style="width:100%">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TẾT QUÝ MÃO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ÁO NAM</a>
+                            <div class="drop-menu">
+                                <a class="nav-link" href="#">ÁO SƠ MI</a>
+                                <a class="nav-link" href="#">ÁO POLO</a>
+                                <a class="nav-link" href="#">ÁO LEN</a>
+                                <a class="nav-link" href="#">ÁO KHOÁC</a>
+                                <a class="nav-link" href="#">ÁO NỈ</a>
+                                <a class="nav-link" href="#">ÁO BLAZER</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">QUẦN NAM</a>
+                            <div class="drop-menu">
+                                <a class="nav-link" href="#">QUẦN JEAN</a>
+                                <a class="nav-link" href="#">QUẦN TÂY</a>
+                                <a class="nav-link" href="#">QUẦN JOGGER</a>
+                                <a class="nav-link" href="#">QUẦN KAKI</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PHỤ KIỆN</a>
+                            <div class="drop-menu">
+                                <a class="nav-link" href="#">QUẦN LÓT</a>
+                                <a class="nav-link" href="#">DÂY LƯNG</a>
+                                <a class="nav-link" href="#">BALO</a>
+                                <a class="nav-link" href="#">GIÀY DÉP</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TIN TỨC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GIỚI THIỆU</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="width:30%">
+                    <div class="search-form">
+                        <form class="d-flex" style="padding-left:40%" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Tìm kiếm..."
+                                aria-label="Search">
+                            <div class="icon">
+                                <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </nav>
+    <div class="product-address d-flex " style="padding-top:100px;width: 90rem">
+        <span class="fw-bold" style="padding:0 20px"> <i class="bi bi-house-door-fill"></i> Trang chủ</span>
+        <span class="fw-bold" style="padding:0 20px">Ác khoác</span>
+        <span style="padding:0 20px">Áo khoác dạ</span>
+    </div>
+    <div class="container d-flex">
+        <div class="product-img">
+            <div class="main">
+                <img class="main-img" src="./img/ao nam/ao nam 1.jpg">
+                <div class="prev-btn"><a href="#"><i class="bi bi-arrow-left-square"></i></a></div>
+                <div class="next-btn"><a href="#"><i class="bi bi-arrow-right-square"></i></a></div>
+            </div>
+            <div class="list-img d-flex">
+                <div class="active-img"><img src="./img/ao nam/ao nam 1.jpg" alt=""></div>
+                <div><img src="./img/ao nam/ao nam 2.jpg" alt=""></div>
+                <div><img src="./img/ao nam/ao nam 3.jpg" alt=""></div>
+                <div><img src="./img/ao nam/ao nam 4.jpg" alt=""></div>
+                <div><img src="./img/ao nam/ao nam 5.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="product-detail">
+            <b style="font-size:20px">Áo Khoác Dạ 0416</b>
+            <hr>
+            <b style="font-size:35px">999.000đ</b>
+            <p style="font-weight:500;padding-top:10px;margin-bottom:0">MÀU SẮC</p>
+            <div class="color d-flex">
+                <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip" data-bs-title="Đen">
+                    <div class="black"></div>
+                </button>
+                <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip" data-bs-title="Xám">
+                    <div class="grey"></div>
+                </button>
+            </div>
+            <p style="font-weight:500;padding-top:10px;margin-bottom:0;padding-bottom:10px">KÍCH THƯỚC</p>
+            <div class="size d-flex" style="padding-bottom:10px">
+                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                <label class="btn btn-secondary" for="option1">M</label>
+                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                <label class="btn btn-secondary" for="option2">L</label>
+                <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                <label class="btn btn-secondary" for="option3">XL</label>
+                <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                <label class="btn btn-secondary" for="option4">XXL</label>
+            </div>
+            <div class="number-order d-flex">
+                <div class="less numberbtn">-</div>
+                <div class="number">
+                    <p>0</p>
+                </div>
+                <div class="more numberbtn">+</div>
+            </div>
+            <div class="buy-btn d-flex" style=" margin-top:10px">
+                <button type="button" class="btn btn-dark" style="margin-right:10px">THÊM VÀO GIỎ HÀNG</button>
+                <button type="button" class="btn btn-dark">MUA NGAY</button>
+            </div>
+            <div class="save"><i class="bi bi-suit-heart-fill"></i>Yêu thích</div>
+        </div>
+        <script>
+            let mainImg = document.querySelector('.main-img')
+            let listImg = document.querySelectorAll('.list-img img')
+            let prevBtn = document.querySelector('.prev-btn')
+            let nextBtn = document.querySelector('.next-btn')
+            let currentIndex = 0;
+            function updateImgByIndex(index) {
+                document.querySelectorAll('.list-img div').forEach(e => {
+                    e.classList.remove('active-img')
+                })
+                currentIndex = index;
+                mainImg.src = listImg[index].getAttribute('src');
+                listImg[index].parentElement.classList.add('active-img')
+
+
+            }
+            listImg.forEach((imgClick, index) => {
+                imgClick.addEventListener("click", e => {
+                    updateImgByIndex(index)
+                })
+            }
+            )
+            prevBtn.addEventListener('click', e => {
+                if (currentIndex == 0) {
+                    currentIndex = listImg.length - 1
+                }
+                else {
+                    currentIndex--
+                }
+                updateImgByIndex(currentIndex)
+            }
+            )
+            nextBtn.addEventListener('click', e => {
+                if (currentIndex == listImg.length - 1) {
+                    currentIndex = 0
+                }
+                else {
+                    currentIndex++
+                }
+                updateImgByIndex(currentIndex)
+            }
+            )
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+            let lessBtn = document.querySelector('.less')
+            let moreBtn = document.querySelector('.more')
+            let numberOrder = document.querySelector('.number p')
+            let num = 0;
+            lessBtn.addEventListener("click", lessNum => {
+                if (num > 0) {
+                    num--;
+                    numberOrder.innerText = num
+                }
+            })
+            moreBtn.addEventListener("click", moreNum => {
+                num++;
+                numberOrder.innerText = num
+            })
+            let heartIcon = document.querySelector('.save i')
+            function changeColor() {
+                heartIcon.addEventListener("click", e => {
+                    heartIcon.style.color = 'red';
+                    console.log('ok');
+                    black()
+                })
+            }
+            changeColor();
+            function black() {
+                heartIcon.addEventListener("click", e => {
+                    heartIcon.style.color = 'black';
+                    changeColor()
+                }
+                )
+            }
+        </script>
+</body>
+
+</html>
